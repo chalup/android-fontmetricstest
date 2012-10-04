@@ -51,6 +51,7 @@ public class MainActivity extends Activity {
         drawLabel(canvas, "-textSize", origin.y, -testStringPaint.getTextSize(), linesPaint, labelsPaint, true);
         drawLabel(canvas, "ascent", origin.y, fontMetrics.ascent, linesPaint, labelsPaint, false);
         drawLabel(canvas, "origin", origin.y, 0, linesPaint, labelsPaint, false);
+        drawLabel(canvas, "descent-textSize", origin.y, fontMetrics.descent-testStringPaint.getTextSize(), linesPaint, labelsPaint, false);
         drawLabel(canvas, "descent", origin.y, fontMetrics.descent, linesPaint, labelsPaint, false);
         drawLabel(canvas, "bottom", origin.y, fontMetrics.bottom, linesPaint, labelsPaint, false);
         drawLabel(canvas, "leading", origin.y, fontMetrics.bottom + fontMetrics.leading, linesPaint, labelsPaint, true);
